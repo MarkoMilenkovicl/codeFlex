@@ -1,197 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlex</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-        <title>CodeFlex</title>
-        <link
-        rel="stylesheet" href="assets/css/style.css">
+    <!-- ======= FONT =========-->
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- ======= AOS =========-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        <!-- ======= FONT =========-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect"
-         href="https://fonts.gstatic.com" crossorigin><link 
-        href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto+Mono:wght@300;400&display=swap"
-         rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
-        <!-- ======= AOS =========-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ======= GSAP =========-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
 
-
-        <!-- ======= GSAP =========-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
-        <script src="assets/js/main.js" defer></script>
-
-        <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
-    </head>
-
-    <body>
-        <div class="header">
-            <div class="navbar">
-                <a href="index.html" class="nav_logo"><img src="assets/img/CodeFlexImg.png" alt="HeaderImg"></a>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-
-            </div>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <a href="index.html" class="nav_logo"
+          ><img src="assets/img/CodeFlexImg.png" alt="HeaderImg"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        
+      </div>
+    </div>
 
-        <div class="contact_page_first_section">
-
-            <p class="contact_page_first_section_h1 " data-aos="fade-in">Want to know more? <br>
-                Give us some details, <br>
-                we’ll do the rest.</p>
-            <div class="contact_page_input_section">
-         
-                <div class="contact_page_input_part">
-
-                    <p class="contact_page_first_input_heading" data-aos="fade-in">Name </p>
-                    <div>
-                        <input
-                          type="text"
-                          class="contact_page_input_one"
-                          id="fname"
-                          name="firstname"
-                          placeholder="e.g. Ivan Gligorijevic"
-                        />
-                      </div>
-
-                      <p class="contact_page_secound_input_heading" data-aos="fade-in">Email </p>
-                <div>
-                    <input
-                      type="text"
-                      class="contact_page_input_two"
-                      id="fname"
-                      name="firstname"
-                      placeholder="e.g. ivangligorijevic@gmail.com"
-                    />
-                  </div>
-
-                  <p class="contact_page_third_input_heading" data-aos="fade-in">Subject </p>
-            <div>
-                <input
-                  type="text"
-                  class="contact_page_input_three"
-                  id="fname"
-                  name="firstname"
-                  placeholder="e.g. Make an enquiry"
-                />
-              </div>
-              <p class="contact_page_fourth_input_heading" data-aos="fade-in">Company</p>
-              <div>
-                <input
-                  type="text"
-                  class="contact_page_input_four"
-                  id="fname"
-                  name="firstname"
-                  placeholder="e.g. CodeFlex"
-                />
-              </div>
-              <p class="contact_page_fifth_input_heading" data-aos="fade-in">Description</p>
-              <div>
-                <input
-                  type="text"
-                  class="contact_page_input_five"
-                  id="fname"
-                  name="firstname"
-                  placeholder="Tell us more..."
-                />
-              </div>
-              
-              <button class="contact_page_submitt_button" data-aos="fade-in">Send Message</button>
-            </div>
-            <div class="contact_page_logo_part" data-aos="fade-in">
-                <img src="/assets/img/contactLogo.svg" alt="contactLogo">
-            </div>
-            </div>  
-        </div>
-
-        <div class="contact_page_boxes_section">
-            <div class="contact_page_boxes_box1" data-aos="fade-in">
-                <p class="contact_page_boxes_box1_p1">GENERAL & SALES INQUIRIES</p>
-                <p class="contact_page_boxes_box1_p2">info@codeflex.it</p>
-                <p class="contact_page_boxes_box1_p3">+31 (0)40 78 20 212</p>
-            </div>
-            <div class="contact_page_boxes_box2" data-aos="fade-in">
-                <p class="contact_page_boxes_box2_p1">TECHNICAL & CUSTOMER SUPPORT</p>
-                <p class="contact_page_boxes_box2_p2">support@codeflex.it</p>
-                <p class="contact_page_boxes_box2_p3">+31 (0)40 78 20 212</p>
-            </div>
-            <div class="contact_page_boxes_box3" data-aos="fade-in">
-                <p class="contact_page_boxes_box3_p1">HEAD OFFICE</p>
-                <p class="contact_page_boxes_box3_p2">Maksima Gorkog 23</p>
-                <p class="contact_page_boxes_box3_p3">21000 Novi Sad</p>
-            </div>
-
-      
-        </div>
-        <div class="contact_page_last_section" >
-     <p class="contact_page_last_heading " data-aos="fade-in">Don’t be a stranger, <br>
-        get in touch! </p>       
-        </div>
-       
-
-
-       <div class="contact_page_footer_section">
-        <div class="footer">
-            <div class="footer_columns">
-                <div class="footer_first_column">
-                    <img src="/assets/img/codeflexLogoSmall.svg" alt="LogoSmall"></div>
-                <div class="footer_secound_column">
-                    <div class="footer_secound_column_link1"><a href="about.html">About us</a></div>
-                    <div class="footer_secound_column_link2"><a href="about.html#whoWeAre_jump_link">Who we are</a></div>
-                    <div class="footer_secound_column_link3"><a href="about.html#whatWeDo_jump_link">What we do</a></div>
-                    <div class="footer_secound_column_link4"> <a href="about.html#philosophy_jump_link">Philosophy</a></div>
-                    <div class="footer_secound_column_link5"><a href="about.html#theTeam_jump_link">The team</a></div>
-                </div>
-                <div class="footer_third_column">
-                    <div class="footer_third_column_link1"><a href="portfolio.html">Portfolio</a></div>
-                        <div class="footer_third_column_link2"><a href="portfolio.html#services_jump_link">Services</a></div>
-                        <div class="footer_third_column_link3"><a href="portfolio.html#technologies_jump_link">Technologies</a></div>
-                        <div class="footer_third_column_link4"><a href="portfolio.html#partners_jump_link">Partners </a></div>
-          
-                </div>
-                <div class="footer_fourth_column">
-                    <p class="footer_fourth_column_p1"><a href="contact.html">Contact </a></p>
-                    <p class="footer_fourth_column_p2">info@codeflex.it</p>
-                    <p class="footer_fourth_column_p3">+31 (0)40 78 20 212</p>
-                </div>
-            </div>
-            <div class="footer_last_row first-container">
-                <div class="footer_last_row_p1"><a href="PrivacyPolicy.html">Privacy policy</a></div>
-                <div class="footer_last_row_p2">
-                    Cookies policy</div>
-                <div class="facebook-icon"><img src="/assets/img/facebook-icon.png" alt="facebook-icon"></div>
-                <div class="instagram-icon"><img src="/assets/img/instagram-icon.png" alt="instagram-icon"></div>
-                <div class="linkedin-icon"><img src="/assets/img/linkedin-icon.png" alt="linkedin-icon"></div>
-            </div>
-          
+    <div class="contact_page_first_section">
+      <p class="contact_page_first_section_h1" data-aos="fade-in">
+        Want to know more? <br />
+        Give us some details, <br />
+        we’ll do the rest.
+      </p>
+      <div class="contact_page_input_section">
+        <div class="contact_page_input_part">
+          <p class="contact_page_first_input_heading" data-aos="fade-in">
+            Name
+          </p>
+          <div>
+            <input
+              type="text"
+              class="contact_page_input_one"
+              id="fname"
+              name="firstname"
+              placeholder="e.g. Ivan Gligorijevic"
+            />
           </div>
-      
+
+          <p class="contact_page_secound_input_heading" data-aos="fade-in">
+            Email
+          </p>
+          <div>
+            <input
+              type="text"
+              class="contact_page_input_two"
+              id="fname"
+              name="firstname"
+              placeholder="e.g. ivangligorijevic@gmail.com"
+            />
+          </div>
+
+          <p class="contact_page_third_input_heading" data-aos="fade-in">
+            Subject
+          </p>
+          <div>
+            <input
+              type="text"
+              class="contact_page_input_three"
+              id="fname"
+              name="firstname"
+              placeholder="e.g. Make an enquiry"
+            />
+          </div>
+          <p class="contact_page_fourth_input_heading" data-aos="fade-in">
+            Company
+          </p>
+          <div>
+            <input
+              type="text"
+              class="contact_page_input_four"
+              id="fname"
+              name="firstname"
+              placeholder="e.g. CodeFlex"
+            />
+          </div>
+          <p class="contact_page_fifth_input_heading" data-aos="fade-in">
+            Description
+          </p>
+          <div>
+            <input
+              type="text"
+              class="contact_page_input_five"
+              id="fname"
+              name="firstname"
+              placeholder="Tell us more..."
+            />
+          </div>
+
+          <button class="contact_page_submitt_button" data-aos="fade-in">
+            Send Message
+          </button>
         </div>
+        <div class="contact_page_logo_part" data-aos="fade-in">
+          <img src="/assets/img/contactLogo.svg" alt="contactLogo" />
+        </div>
+      </div>
+    </div>
 
+    <div class="contact_page_boxes_section">
+      <div class="contact_page_boxes_box1" data-aos="fade-in">
+        <p class="contact_page_boxes_box1_p1">GENERAL & SALES INQUIRIES</p>
+        <p class="contact_page_boxes_box1_p2">
+          <a href="mailto: info@codeflex.it">info@codeflex.it </a>
+        </p>
+        <p class="contact_page_boxes_box1_p3">+31 (0)40 78 20 212</p>
+      </div>
+      <div class="contact_page_boxes_box2" data-aos="fade-in">
+        <p class="contact_page_boxes_box2_p1">TECHNICAL & CUSTOMER SUPPORT</p>
+        <p class="contact_page_boxes_box2_p2">
+          <a href="mailto: support@codeflex.it">support@codeflex.it</a>
+        </p>
+        <p class="contact_page_boxes_box2_p3">+31 (0)40 78 20 212</p>
+      </div>
+      <div class="contact_page_boxes_box3" data-aos="fade-in">
+        <p class="contact_page_boxes_box3_p1">HEAD OFFICE</p>
+        <p class="contact_page_boxes_box3_p2">Maksima Gorkog 23</p>
+        <p class="contact_page_boxes_box3_p3">21000 Novi Sad</p>
+      </div>
+    </div>
+    <div class="contact_page_last_section">
+      <p class="contact_page_last_heading" data-aos="fade-in">
+        Don’t be a stranger, <br />
+        get in touch!
+      </p>
+    </div>
 
-    </body></html>
+    <div class="contact_page_footer_section">
+      <div class="footer">
+        <div class="footer_columns">
+          <div class="footer_first_column">
+            <img src="/assets/img/codeflexLogoSmall.svg" alt="LogoSmall" />
+          </div>
+          <div class="footer_secound_column">
+            <div class="footer_secound_column_link1">
+              <a href="about.html">About us</a>
+            </div>
+            <div class="footer_secound_column_link2">
+              <a href="about.html#whoWeAre_jump_link">Who we are</a>
+            </div>
+            <div class="footer_secound_column_link3">
+              <a href="about.html#whatWeDo_jump_link">What we do</a>
+            </div>
+            <div class="footer_secound_column_link4">
+              <a href="about.html#philosophy_jump_link">Philosophy</a>
+            </div>
+            <div class="footer_secound_column_link5">
+              <a href="about.html#theTeam_jump_link">The team</a>
+            </div>
+          </div>
+          <div class="footer_third_column">
+            <div class="footer_third_column_link1">
+              <a href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="footer_third_column_link2">
+              <a href="portfolio.html#services_jump_link">Services</a>
+            </div>
+            <div class="footer_third_column_link3">
+              <a href="portfolio.html#technologies_jump_link">Technologies</a>
+            </div>
+            <div class="footer_third_column_link4">
+              <a href="portfolio.html#partners_jump_link">Partners </a>
+            </div>
+          </div>
+          <div class="footer_fourth_column">
+            <p class="footer_fourth_column_p1">
+              <a href="contact.html">Contact </a>
+            </p>
+            <p class="footer_fourth_column_p2">
+              <a href="mailto: sales@codeflex.it">info@codeflex.it </a>
+            </p>
+            <p class="footer_fourth_column_p3">+31 (0)40 78 20 212</p>
+          </div>
+        </div>
+        <div class="footer_last_row first-container">
+          <div class="footer_last_row_p1">
+            <a href="PrivacyPolicy.html">Privacy policy</a>
+          </div>
+          <div class="footer_last_row_p2">Cookies policy</div>
+          <div class="facebook-icon">
+            <img src="/assets/img/facebook-icon.png" alt="facebook-icon" />
+          </div>
+          <div class="instagram-icon">
+            <img src="/assets/img/instagram-icon.png" alt="instagram-icon" />
+          </div>
+          <div class="linkedin-icon">
+            <img src="/assets/img/linkedin-icon.png" alt="linkedin-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

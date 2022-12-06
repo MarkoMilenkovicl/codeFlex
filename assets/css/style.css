@@ -49,7 +49,7 @@ body {
 ================================================== */
 .header {
   height: 3.645vw;
-  background: #22033a;
+  background: var(--dark-indigo);
   position: fixed;
   z-index: 10000;
   top: 0;
@@ -467,12 +467,17 @@ body {
   line-height: 1.305vw;
   padding-bottom: 0.52vw;
   text-decoration-line: underline;
+  cursor: pointer;
+}
+.fifth_section_p2 a{
+  color: var(--black);
 }
 
 .fifth_section_p3 {
   font-size: 0.989vw;
   line-height: 1.305vw;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 /*==================Footer=======
@@ -587,6 +592,12 @@ body {
   font-size: 0.989vw;
   line-height: 1.385vw;
   padding-bottom: 0.52vw;
+  cursor: pointer;
+}
+.footer_fourth_column_p2 a{
+  text-decoration: none;
+  color: var(--white);
+  
 }
 
 .footer_last_row {
@@ -1707,7 +1718,7 @@ body {
 .contact_page_first_section {
 
   padding-left: 7.812vw;
-  height: 83vw;
+  min-height: 83vw;
   background: url(/assets/img/background.svg) no-repeat fixed center;
 }
 
@@ -1885,17 +1896,18 @@ body {
   height: 14.895vw;
   background: var(--dark-indigo);
   border-radius: 2.083vw;
+  cursor: pointer;
   margin-top: 1.718vw;
   text-align: center;
+  transition: .7s ease;
 }
 
 .contact_page_boxes_box1:hover {
-  margin-top: 0vw;
-  cursor: pointer;
+  margin-top: 0vw; 
   width: 31.562vw;
   height: 17.803vw;
   box-shadow: 0px 0px 8px 4px #F5437C;
-  transition: 1s;
+  
 }
 
 .contact_page_boxes_box2 {
@@ -1905,6 +1917,7 @@ body {
   border-radius: 2.083vw;
   margin-top: 1.718vw;
   text-align: center;
+  transition: .7s ease;
 }
 
 .contact_page_boxes_box2:hover {
@@ -1913,8 +1926,10 @@ body {
   width: 31.562vw;
   height: 17.803vw;
   box-shadow: 0px 0px 8px 4px #F5437C;
-  transition: 1s;
+ 
+  
 }
+
 
 
 
@@ -1925,6 +1940,7 @@ body {
   border-radius: 2.083vw;
   margin-top: 1.718vw;
   text-align: center;
+  transition: 0.7s ease;
 }
 
 .contact_page_boxes_box3:hover {
@@ -1933,7 +1949,7 @@ body {
   width: 31.562vw;
   height: 17.803vw;
   box-shadow: 0px 0px 8px 4px #F5437C;
-  transition: 1s;
+  
 }
 
 .contact_page_boxes_box1_p1 {
@@ -1953,7 +1969,14 @@ body {
   padding-bottom: 1.562vw;
   text-decoration: underline;
 }
-
+.contact_page_boxes_box1_p2 a{
+color: var(--white);
+text-decoration: none;
+}
+.contact_page_boxes_box2_p2 a{
+  color: var(--white);
+text-decoration: none;
+}
 .contact_page_boxes_box1_p3 {
   font-size: 1.25vw;
   line-height: 1.648vw;
