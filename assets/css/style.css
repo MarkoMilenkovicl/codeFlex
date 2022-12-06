@@ -1880,71 +1880,57 @@ body {
 }
 
 .contact_page_boxes_section {
-
-  display: flex;
   background: url(/assets/img/background.svg) no-repeat fixed center;
-  min-height: 26.197vw;
-  align-items: center;
+  height: 33.811vw;
+  display: flex;
   justify-content: center;
-  padding-top: 8.385vw;
+  align-items: center;
   color: var(--white);
-
+  padding-top: 8.385vw;
+  padding-bottom: 6.8145vw;
 }
 
-.contact_page_boxes_box1 {
+#box1{  
   width: 26.406vw;
   height: 14.895vw;
   background: var(--dark-indigo);
   border-radius: 2.083vw;
-  cursor: pointer;
-  margin-top: 1.718vw;
   text-align: center;
-  transition: .7s ease;
-}
-
-.contact_page_boxes_box1:hover {
-  margin-top: 0vw; 
-  width: 31.562vw;
-  height: 17.803vw;
-  box-shadow: 0px 0px 8px 4px #F5437C;
+  transition: height .3s ease, width .3s ease;
   
 }
-
-.contact_page_boxes_box2 {
-  width: 26.406vw;
-  height: 14.895vw;
-  background: var(--dark-indigo);
-  border-radius: 2.083vw;
-  margin-top: 1.718vw;
-  text-align: center;
-  transition: .7s ease;
-}
-
-.contact_page_boxes_box2:hover {
-  margin-top: 0vw;
+#box1:hover{
+  
   cursor: pointer;
+  box-shadow: 0px 0px 8px 4px #F5437C;
   width: 31.562vw;
   height: 17.803vw;
-  box-shadow: 0px 0px 8px 4px #F5437C;
- 
-  
 }
 
+#box2{
+  width: 26.406vw;
+  height: 14.895vw;
+  background: var(--dark-indigo);
+  border-radius: 2.083vw; 
+  text-align: center;
+  transition: height .3s ease-in, width .3s ease-in;
+}
+#box2:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 4px #F5437C;
+  width: 31.562vw;
+  height: 17.803vw;
+}
 
-
-
-.contact_page_boxes_box3 {
+#box3{
   width: 26.406vw;
   height: 14.895vw;
   background: var(--dark-indigo);
   border-radius: 2.083vw;
-  margin-top: 1.718vw;
   text-align: center;
-  transition: 0.7s ease;
+  transition: height .3s ease-in, width .3s ease-in;
 }
-
-.contact_page_boxes_box3:hover {
-  margin-top: 0vw;
+#box3:hover{ 
   cursor: pointer;
   width: 31.562vw;
   height: 17.803vw;
@@ -1953,11 +1939,10 @@ body {
 }
 
 .contact_page_boxes_box1_p1 {
+  padding-top: 3.125vw;
   font-size: 1.25vw;
   line-height: 1.648vw;
   font-weight: 400;
-  padding-top: 3.125vw;
-
   padding-bottom: 2.604vw;
 }
 
@@ -1965,7 +1950,6 @@ body {
   font-size: 1.25vw;
   line-height: 1.648vw;
   font-weight: 400;
-
   padding-bottom: 1.562vw;
   text-decoration: underline;
 }
@@ -1989,7 +1973,6 @@ text-decoration: none;
   line-height: 1.648vw;
   font-weight: 400;
   padding-top: 3.125vw;
-
   padding-bottom: 2.604vw;
 }
 
@@ -1997,7 +1980,6 @@ text-decoration: none;
   font-size: 1.25vw;
   line-height: 1.648vw;
   font-weight: 400;
-
   padding-bottom: 1.562vw;
   text-decoration: underline;
 }
@@ -2014,7 +1996,6 @@ text-decoration: none;
   line-height: 1.648vw;
   font-weight: 400;
   padding-top: 3.125vw;
-
   padding-bottom: 2.604vw;
 }
 
@@ -2037,13 +2018,14 @@ text-decoration: none;
 
 .contact_page_last_section {
   background: url(/assets/img/background.svg) no-repeat fixed center;
-  height: 31.666vw;
+  min-height: 25vw;
+  
 }
 
 .contact_page_last_heading {
   padding-left: 7.812vw;
   padding-bottom: 10.416vw;
-  padding-top: 7.812vw;
+  
   font-size: 5.208vw;
   line-height: 7.291vw;
   font-weight: 300vw;
